@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Netflix Titles</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Netflix Titles Search</h1>
+
+    <form method="POST">
+        <input type="text" name="title" placeholder="Search Title" value="{{ search_title }}">
+        <input type="text" name="genre" placeholder="Search Type" value="{{ search_genre }}">
+        <button type="submit">Search</button>
+        <button type="submit" name="clear" value="true">Clear</button>
+    </form>
+
+    {% if tables %}
+        <h2>Filtered Results</h2>
+        {{ tables|safe }}
+
+        <div class="pagination">
+            {% if page > 1 %}
+                <form method="POST">
+                    <input type="hidden" name="title" value="{{ search_title }}">
+                    <input type="hidden" name="genre" value="{{ search_genre }}">
+                    <input type="hidden" name="page" value="{{ page - 1 }}">
+                    <button type="submit">Previous</button>
+                </form>
+            {% endif %}
+
+            {% if has_next %}
+                <form method="POST">
+                    <input type="hidden" name="title" value="{{ search_title }}">
+                    <input type="hidden" name="genre" value="{{ search_genre }}">
+                    <input type="hidden" name="page" value="{{ page + 1 }}">
+                    <button type="submit">Next</button>
+                </form>
+            {% endif %}
+        </div>
+    {% else %}
+        <div class="message">No titles match your search.</div>
+    {% endif %}
+
+    <h2>Rating Summary</h2>
+    {{ rating_table|safe }}
+</body>
+</html>

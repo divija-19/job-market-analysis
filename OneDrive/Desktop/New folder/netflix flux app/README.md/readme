@@ -1,0 +1,17 @@
+# Netflix Flask App
+
+A Flask web app to search and filter Netflix titles with pagination and rating summary.
+
+## Features
+
+- Search by title and type
+- Pagination (20 results per page)
+- Rating summary table
+- Dark Netflix-inspired UI using CSS only (no JS or Bootstrap)
+- No external dependencies beyond Flask and Pandas
+
+## How to run
+
+```bash
+pip install -r requirements.txt
+python app.py
