@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="brm_logical" id="3B1FA3FF-8DC7-BA43-75C1-C5A5C3B51D95" version="3.5">
+<createdBy>divij</createdBy>
+<createdTime>2025-09-15 01:16:48 UTC</createdTime>
+<ownerDesignName>brm_logical</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>3B1FA3FF-8DC7-BA43-75C1-C5A5C3B51D95</designId>
+</OSDM_Design>
