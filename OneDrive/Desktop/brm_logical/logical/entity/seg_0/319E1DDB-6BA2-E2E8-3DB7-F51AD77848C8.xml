@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="319E1DDB-6BA2-E2E8-3DB7-F51AD77848C8" name="truck_master">
+<createdBy>divij</createdBy>
+<createdTime>2025-09-15 04:45:00 UTC</createdTime>
+<ownerDesignName>brm_logical</ownerDesignName>
+<engineerTo>
+<item key="47F74EA6-5BAA-CEDA-B931-33A26178039B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="truck_VIN" id="9CF441D7-60F4-39CD-88CA-640D2CD49EEA">
+<createdBy>divij</createdBy>
+<createdTime>2025-09-15 04:45:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[truck VIN ]]></commentInRDBMS>
+<ownerDesignName>brm_logical</ownerDesignName>
+<engineerTo>
+<item key="47F74EA6-5BAA-CEDA-B931-33A26178039B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>17</dataTypeSize>
+<ownDataTypeParameters>17,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="truck_reg_no" id="6DC90AA2-4B14-9579-083F-52E917FCB8EB">
+<createdBy>divij</createdBy>
+<createdTime>2025-09-15 04:45:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[truck registration number]]></commentInRDBMS>
+<ownerDesignName>brm_logical</ownerDesignName>
+<engineerTo>
+<item key="47F74EA6-5BAA-CEDA-B931-33A26178039B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="total_km_travelled" id="26F5DB80-E071-13A5-9623-C61FEAAD8431">
+<createdBy>divij</createdBy>
+<createdTime>2025-09-15 04:46:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[km travelled by truck ]]></commentInRDBMS>
+<ownerDesignName>brm_logical</ownerDesignName>
+<engineerTo>
+<item key="47F74EA6-5BAA-CEDA-B931-33A26178039B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="km_of_last_service" id="E4DF5C7A-25A1-080F-3770-E0220F67508B">
+<createdBy>divij</createdBy>
+<createdTime>2025-09-15 04:46:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[km of the last serivice by truck ]]></commentInRDBMS>
+<ownerDesignName>brm_logical</ownerDesignName>
+<engineerTo>
+<item key="47F74EA6-5BAA-CEDA-B931-33A26178039B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="truck_purchase_date " id="31D86B48-CD73-3132-6A9B-2AA0E62B57E7">
+<createdBy>divij</createdBy>
+<createdTime>2025-09-15 04:46:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[date bought ]]></commentInRDBMS>
+<ownerDesignName>brm_logical</ownerDesignName>
+<engineerTo>
+<item key="47F74EA6-5BAA-CEDA-B931-33A26178039B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="truck_purchase_price" id="AA0A22FE-5588-68D8-9EF4-1D2F29228191">
+<createdBy>divij</createdBy>
+<createdTime>2025-09-15 04:47:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[purchase price of truck ]]></commentInRDBMS>
+<ownerDesignName>brm_logical</ownerDesignName>
+<engineerTo>
+<item key="47F74EA6-5BAA-CEDA-B931-33A26178039B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="truck_decommission_date" id="0379CA19-8268-F8E9-073A-2B5958F06C62">
+<createdBy>divij</createdBy>
+<createdTime>2025-09-15 04:48:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[truck decommission date]]></commentInRDBMS>
+<ownerDesignName>brm_logical</ownerDesignName>
+<engineerTo>
+<item key="47F74EA6-5BAA-CEDA-B931-33A26178039B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="81C118D0-B8D9-4E3C-6383-FF285DD3B032" name="truck_master PK">
+<createdBy>divij</createdBy>
+<createdTime>2025-09-15 04:45:29 UTC</createdTime>
+<ownerDesignName>brm_logical</ownerDesignName>
+<engineerTo>
+<item key="47F74EA6-5BAA-CEDA-B931-33A26178039B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9CF441D7-60F4-39CD-88CA-640D2CD49EEA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

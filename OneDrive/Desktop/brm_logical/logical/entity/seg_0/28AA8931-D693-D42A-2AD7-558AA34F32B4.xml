@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="28AA8931-D693-D42A-2AD7-558AA34F32B4" name="Employee">
+<createdBy>divij</createdBy>
+<createdTime>2025-09-15 01:31:32 UTC</createdTime>
+<ownerDesignName>brm_logical</ownerDesignName>
+<engineerTo>
+<item key="47F74EA6-5BAA-CEDA-B931-33A26178039B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="emp_no" id="B0313108-4277-9FB4-B7E7-B6F400C37BFD">
+<createdBy>divij</createdBy>
+<createdTime>2025-09-15 01:32:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[employee number]]></commentInRDBMS>
+<ownerDesignName>brm_logical</ownerDesignName>
+<engineerTo>
+<item key="47F74EA6-5BAA-CEDA-B931-33A26178039B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_given_name" id="AE3F2D4B-B61A-C3FB-3D85-5D0D174A3A32">
+<createdBy>divij</createdBy>
+<createdTime>2025-09-15 01:33:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[employee first name]]></commentInRDBMS>
+<ownerDesignName>brm_logical</ownerDesignName>
+<engineerTo>
+<item key="47F74EA6-5BAA-CEDA-B931-33A26178039B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_family_name" id="14FC2006-0429-FC8E-0CAB-1446D0811AA8">
+<createdBy>divij</createdBy>
+<createdTime>2025-09-15 01:33:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[employee family name]]></commentInRDBMS>
+<ownerDesignName>brm_logical</ownerDesignName>
+<engineerTo>
+<item key="47F74EA6-5BAA-CEDA-B931-33A26178039B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_contact_no" id="FB03B822-BC88-E7F3-E138-8CB534913BE5">
+<createdBy>divij</createdBy>
+<createdTime>2025-09-15 01:33:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[employee contact number ]]></commentInRDBMS>
+<ownerDesignName>brm_logical</ownerDesignName>
+<engineerTo>
+<item key="47F74EA6-5BAA-CEDA-B931-33A26178039B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_salary" id="25097E31-4B95-62B5-4019-AB1F69070EF8">
+<createdBy>divij</createdBy>
+<createdTime>2025-09-15 01:34:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[employee salary ]]></commentInRDBMS>
+<ownerDesignName>brm_logical</ownerDesignName>
+<engineerTo>
+<item key="47F74EA6-5BAA-CEDA-B931-33A26178039B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="licence_no" id="F65D10B8-9601-1297-B0C1-943DF33CB5DA">
+<createdBy>divij</createdBy>
+<createdTime>2025-09-15 01:36:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[licence number ]]></commentInRDBMS>
+<ownerDesignName>brm_logical</ownerDesignName>
+<engineerTo>
+<item key="47F74EA6-5BAA-CEDA-B931-33A26178039B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tax_file_no" id="C2E1AF28-E8DC-A471-E826-C01F1339A7B7">
+<createdBy>divij</createdBy>
+<createdTime>2025-09-15 01:37:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[tax file number ]]></commentInRDBMS>
+<ownerDesignName>brm_logical</ownerDesignName>
+<engineerTo>
+<item key="47F74EA6-5BAA-CEDA-B931-33A26178039B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D71F1461-C112-BCFB-E12D-89C880EBEFBC" name="Employee PK">
+<createdBy>divij</createdBy>
+<createdTime>2025-09-15 01:32:13 UTC</createdTime>
+<ownerDesignName>brm_logical</ownerDesignName>
+<engineerTo>
+<item key="47F74EA6-5BAA-CEDA-B931-33A26178039B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B0313108-4277-9FB4-B7E7-B6F400C37BFD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
