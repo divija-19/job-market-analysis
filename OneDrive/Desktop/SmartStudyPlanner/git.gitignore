@@ -1,0 +1,6 @@
+# Ignore everything outside this folder
+/*
+
+# But don''t ignore files and folders inside this project
+!app/
+!*.py
